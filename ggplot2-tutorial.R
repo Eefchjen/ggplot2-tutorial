@@ -47,10 +47,9 @@
     
 #We can import this file into R using [`read.table()`](http://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html)
 
-    students = read.table(
-        "data/students.tsv", 
+    students = read.csv(
+        "data/students.csv", 
         header = F, 
-        sep = "\t", 
         col.names = c("age", "score", "name")
     )
     
